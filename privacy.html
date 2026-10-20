@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="SedPmOFqp_i6rwF6Lxg-mhJ8nPJ9cvLs4gB2UPLO_jg"
+    />
+    <title>BarMeetExt — Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #f6f1ea;
+        --ink: #1c1a17;
+        --muted: #6b645c;
+        --accent: #2f5d50;
+        --line: #e4ddd3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(120% 80% at 100% 0%, #f0e2d2 0%, transparent 55%),
+          var(--bg);
+        font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+        line-height: 1.55;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-family: Georgia, "Iowan Old Style", serif;
+        font-size: 2rem;
+        letter-spacing: -0.02em;
+      }
+      .updated {
+        color: var(--muted);
+        margin: 0 0 1.75rem;
+        font-size: 0.95rem;
+      }
+      h2 {
+        margin: 1.75rem 0 0.6rem;
+        font-size: 1.15rem;
+        color: var(--accent);
+      }
+      p, li { margin: 0 0 0.75rem; }
+      ul { padding-left: 1.2rem; }
+      a { color: var(--accent); }
+      hr {
+        border: none;
+        border-top: 1px solid var(--line);
+        margin: 2rem 0;
+      }
+      code {
+        font-size: 0.9em;
+        background: #ebe4da;
+        padding: 0.1em 0.35em;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="./">← BarMeetExt home</a></p>
+      <h1>Privacy Policy — BarMeetExt (BarMeet)</h1>
+      <p class="updated">Last updated: 20 October 2026</p>
+
+      <p>
+        This policy describes how the <strong>BarMeet</strong> Chrome extension
+        (Google OAuth application name: <strong>BarMeetExt</strong>) handles
+        information when you use the extension. This page is public; you do not
+        need to sign in to read it.
+      </p>
+
+      <h2>Who we are</h2>
+      <p>
+        BarMeet is published as a Chrome extension. The developer contact
+        email shown on the Chrome Web Store listing and on the Google Cloud
+        OAuth consent screen is the primary contact for privacy questions.
+      </p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>BarMeet does <strong>not</strong> operate application servers that store your calendar data.</li>
+        <li>BarMeet does <strong>not</strong> sell, rent, or use your data for advertising.</li>
+        <li>Calendar data is accessed only after you connect Google Calendar inside the extension.</li>
+        <li>Preferences are stored locally in your browser via Chrome extension storage.</li>
+      </ul>
+
+      <h2>Google API scopes</h2>
+      <p>
+        When you connect, BarMeet requests the OAuth scope
+        <code>https://www.googleapis.com/auth/calendar</code> (Google Calendar).
+        That scope allows the extension to:
+      </p>
+      <ul>
+        <li>Read timed events on your primary calendar (for “now”, upcoming list, toolbar badge, and optional reminders)</li>
+        <li>Create calendar events when you use Start meeting or Focus time</li>
+        <li>Update or delete events when you reschedule or cancel from the extension</li>
+        <li>Read conference or join links on events so you can open Meet or other join URLs</li>
+      </ul>
+      <p>
+        BarMeet does not request Gmail, Drive, Contacts, or other Google APIs.
+      </p>
+
+      <h2>Information accessed and how it is used</h2>
+      <table style="width:100%; border-collapse: collapse; font-size: 0.95rem;">
+        <thead>
+          <tr>
+            <th style="text-align:left; border-bottom: 1px solid var(--line); padding: 0.4rem 0;">Data</th>
+            <th style="text-align:left; border-bottom: 1px solid var(--line); padding: 0.4rem 0;">Purpose</th>
+            <th style="text-align:left; border-bottom: 1px solid var(--line); padding: 0.4rem 0;">Where it goes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0;">Google account identifier (email / profile from OAuth)</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Show that you are connected; sign out and token revoke</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Used only in the extension; not sent to a BarMeet backend</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0;">Calendar events (title, start/end, links, attendees if present on the event)</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Display meetings, join links, reminders; create/update/delete when you ask</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Fetched from Google Calendar API; held in extension memory while in use; not uploaded to our servers</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0;">OAuth access tokens</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Authenticate Calendar API requests</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Managed by <strong>Chrome Identity</strong> on your device</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0;">Extension settings (durations, reminder toggles, etc.)</td>
+            <td style="vertical-align: top; padding: 0.5rem;">Remember your preferences</td>
+            <td style="vertical-align: top; padding: 0.5rem;"><code>chrome.storage</code> on your device</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Data retention</h2>
+      <p>
+        Calendar event content is not persisted on BarMeet servers. Cached data
+        in the extension is refreshed from Google and cleared when you sign out
+        or remove the extension. OAuth tokens remain until you sign out, revoke
+        access in your Google Account, or uninstall the extension.
+      </p>
+
+      <h2>Data we do not collect</h2>
+      <p>BarMeet does not intentionally collect or upload:</p>
+      <ul>
+        <li>Passwords</li>
+        <li>Payment or health information</li>
+        <li>Your general browsing history or page content from websites you visit</li>
+        <li>Keystrokes, mouse tracking, or analytics across the web</li>
+      </ul>
+
+      <h2>Sharing and disclosure</h2>
+      <p>
+        BarMeet does not sell or share your personal information with third
+        parties for their marketing. Calendar requests are sent only to
+        <strong>Google</strong> (Calendar API) under Google’s terms and your
+        consent. We do not transfer Google user data to other services except
+        as needed to provide the extension features you trigger (for example,
+        opening a Meet URL in a new tab).
+      </p>
+
+      <h2>Google API Services User Data Policy</h2>
+      <p>
+        BarMeet’s use and transfer of information received from Google APIs
+        adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including the Limited Use requirements. In particular, Google user data
+        is used only to provide or improve user-facing features of BarMeet, is
+        not used for serving ads, and is not sold to third parties.
+      </p>
+
+      <h2>Third-party services</h2>
+      <p>
+        Authentication and calendar operations use Google (OAuth and Google
+        Calendar API). See
+        <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+        Distribution is via the Chrome Web Store (Google).
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        Communication with Google uses HTTPS. Because there is no BarMeet
+        backend database, your calendar is not stored on our infrastructure.
+        You are responsible for securing access to your Google Account and
+        device.
+      </p>
+
+      <h2>Your choices and rights</h2>
+      <ul>
+        <li><strong>Sign out</strong> in the extension popup</li>
+        <li><strong>Remove the extension</strong> in Chrome</li>
+        <li>
+          <strong>Revoke OAuth access</strong> at
+          <a href="https://myaccount.google.com/permissions">Google Account → Third-party access</a>
+          and remove BarMeetExt / BarMeet
+        </li>
+        <li>Disable notifications and reminders in extension settings</li>
+      </ul>
+      <p>
+        Depending on where you live, you may have rights to access, correct,
+        or delete personal data. Because BarMeet does not host your calendar
+        data, exercising those rights for calendar content is primarily done
+        through Google Calendar and your Google Account.
+      </p>
+
+      <h2>Children</h2>
+      <p>BarMeet is not directed at children under 13 (or the applicable age in your region).</p>
+
+      <h2>Changes</h2>
+      <p>
+        We may update this policy when the extension changes. The “Last updated”
+        date at the top will change when we do. Material changes may also be
+        noted in Chrome Web Store release notes.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, use the developer contact email on the Chrome
+        Web Store listing for BarMeet or the support email on the Google Cloud
+        OAuth consent screen for BarMeetExt.
+      </p>
+
+      <hr />
+      <p class="updated">
+        <a href="./">Application home</a>
+        ·
+        <a href="./PRIVACY_POLICY.md">Markdown version</a>
+      </p>
+    </main>
+  </body>
+</html>
